@@ -110,18 +110,22 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: url("/assets/img/electronics.jpg");/*linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);*/
+  background-attachment: fixed;
 
   @include large {
-    padding: 5rem 6rem;
+    padding: 7rem 7rem;
+    padding-top: 8rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
+    padding-top: 6rem;
   }
 
   @include small {
     padding: 2rem 1rem;
+    padding-top: 6rem;
   }
 }
 
