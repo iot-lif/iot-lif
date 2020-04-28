@@ -1,10 +1,13 @@
 <header class="site-header" role="banner" style="position:fixed; top: 0; width:100%;background-color:white;">
 
+
   <div class="wrapper">
     {% assign default_refs = site.pages | sort:"order" | map: "ref" %}
     {% assign page_refs = site.header_page_refs | default: default_refs %}
 
-    <a class="site-title" href="{{ "/" | absolute_url }}">Home</a>
+    {% if page.layout != 'home' %}
+      <a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | escape }}</a>
+    {% endif %}
 
     {% if page_refs %}
       <nav class="site-nav">
