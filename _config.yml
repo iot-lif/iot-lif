@@ -9,3 +9,5 @@ theme: # leave it empty
 
 plugins:
   - jekyll-target-blank
+
+repository_url: "https://github.com/ohjay/snn-modulation-classification"
