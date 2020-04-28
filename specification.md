@@ -7,9 +7,6 @@ ref: specification
 order: 0
 ---
 
-
-
-
 Overview
 ========
 
@@ -24,6 +21,8 @@ to. In this project, we aim to implement an efficient and low-power
 computing system to classify radio signals. Our method will be based on
 a learning system inspired by biological neurons and will be evaluated
 using RadioML, a publicly available dataset of radio signals.
+
+This page is available as PDF [here](/assets/other/lif_project_specification.pdf)
 
 Approach
 ========
@@ -84,8 +83,10 @@ performance of our models *relative to their parameter counts and
 computational requirements*.
 
 <figure>
-<img src="resnet_vgg_accuracies.png" alt="These are the ResNet and VGG model sizes and accuracies from the project lead’s previous paper (). They were the best-performing and also largest models in the project. We will be aiming to get as close as possible to these accuracies with less computationally-expensive models and reduced precision." /><figcaption>These are the ResNet and VGG model sizes and accuracies from the project lead’s previous paper (<span class="citation" data-cites="previouswork"></span>). They were the best-performing and also largest models in the project. We will be aiming to get as close as possible to these accuracies with less computationally-expensive models and reduced precision.</figcaption>
-</figure>SNN with Deep Continuous Local Learning
+<img src="/assets/img/resnet_vgg_accuracies.png" alt="These are the ResNet and VGG model sizes and accuracies from the project lead’s previous paper. They were the best-performing and also largest models in the project. We will be aiming to get as close as possible to these accuracies with less computationally-expensive models and reduced precision." /><figcaption>These are the ResNet and VGG model sizes and accuracies from the project lead’s previous paper (<span class="citation" data-cites="previouswork"></span>). They were the best-performing and also largest models in the project. We will be aiming to get as close as possible to these accuracies with less computationally-expensive models and reduced precision.</figcaption>
+</figure>
+
+SNN with Deep Continuous Local Learning
 ---------------------------------------
 
 For our approach, we plan to follow the spiking neural network method
@@ -107,8 +108,10 @@ after biological neurons and are represented by a number of state
 variables such as membrane potential and resetting state.
 
 <figure>
-<img src="snn_feedforward.png" alt="An illustration of the DECOLLE feedforward SNN architecture over two timesteps. Each blue block represents a state variable, each column represents a timestep, and the orange diamonds are auxiliary losses. The arrows represent the flow of information (orange arrows represent the flow of gradients). As you can see, information from one time step is fed into the next time step, which helps the network model the temporal aspect of the data." style="width:55.0%" /><figcaption>An illustration of the DECOLLE feedforward SNN architecture over two timesteps. Each blue block represents a state variable, each column represents a timestep, and the orange diamonds are auxiliary losses. The arrows represent the flow of information (orange arrows represent the flow of gradients). As you can see, information from one time step is fed into the next time step, which helps the network model the temporal aspect of the data.</figcaption>
-</figure>Project Parts
+<img src="/assets/img/snn_feedforward.png" alt="An illustration of the DECOLLE feedforward SNN architecture over two timesteps. Each blue block represents a state variable, each column represents a timestep, and the orange diamonds are auxiliary losses. The arrows represent the flow of information (orange arrows represent the flow of gradients). As you can see, information from one time step is fed into the next time step, which helps the network model the temporal aspect of the data." style="width:55.0%" /><figcaption>An illustration of the DECOLLE feedforward SNN architecture over two timesteps. Each blue block represents a state variable, each column represents a timestep, and the orange diamonds are auxiliary losses. The arrows represent the flow of information (orange arrows represent the flow of gradients). As you can see, information from one time step is fed into the next time step, which helps the network model the temporal aspect of the data.</figcaption>
+</figure>
+
+Project Parts
 -------------
 
 We intend to build off of the code provided by the authors of the
@@ -173,9 +176,6 @@ producing the following results:
     intend to create a quantized version of the neural network using the
     Python library Brevitas. This network will be evaluated on its
     required space, computational efficiency (timing) and accuracy.
-
-For more details about the milestones, deliverables, and schedule, see
-section <a href="#sec:schedule" data-reference-type="ref" data-reference="sec:schedule">[sec:schedule]</a>.
 
 Feasibility and Risks
 =====================
@@ -277,15 +277,9 @@ results will also be published on the project website.
 Schedule
 ========
 
-In this section we outline the schedule for the project. Table
-<a href="#milestone_summary" data-reference-type="ref" data-reference="milestone_summary">[milestone_summary]</a>
-provides a summary, while a more detailed description can be found
-below.
-
-<span id="sec:schedule" label="sec:schedule">\[sec:schedule\]</span>
+In this section we outline the schedule for the project. 
 
 <table>
-<caption>Summary of milestone/deliverable schedule</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong><span class="sans-serif">Week</span></strong></th>
@@ -380,10 +374,8 @@ below.
 <td style="text-align: left;">Owen</td>
 </tr>
 </tbody>
+<caption>Summary of milestone/deliverable schedule</caption>
 </table>
-
-<span id="milestone_summary"
-label="milestone_summary">\[milestone\_summary\]</span>
 
 Week 4
 ======
@@ -393,11 +385,11 @@ Week 4
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Train SNN (DCLL lib) with MNIST dataset.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have an SNN network that can be run on the MNIST dataset on the GPU cluster.</td>
 </tr>
 </tbody>
@@ -408,11 +400,11 @@ Week 4
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Preprocess and load RadioML dataset for SNN.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have the RadioML data on the GPU cluster in a form that can be fed to the SNN.</td>
 </tr>
 </tbody>
@@ -426,11 +418,11 @@ Week 5
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Get familiar with Brevitas library.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Written report including a description of which functionality Brevitas offers, how the codebase of Brevitas is organized, how it is used for regular neural networks and outline on where extensions for spiking neural networks will have to be made.</td>
 </tr>
 </tbody>
@@ -441,11 +433,11 @@ Week 5
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Get familiar with the DCLL codebase, determine which parts of the code will need to be changed in order to create a VGG-like SNN architecture using DCLL modules.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Written report which includes a high-level overview of the different parts of the code and a description of which specific files and functions will need to be changed or utilized in order to define a VGG-like architecture for use with RadioML.</td>
 </tr>
 </tbody>
@@ -459,11 +451,11 @@ Week 6
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Extend Brevitas for usage with spiking neural networks from dcll library.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a trained quantized version of the MNIST network for different bit sizes (16-, 8- and 4-bit) and report on accuracy achieved.</td>
 </tr>
 </tbody>
@@ -474,11 +466,11 @@ Week 6
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Adapt SNN for RadioML using DCLL PyTorch library.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a first SNN modeled after VGG that can be trained on RadioML data (ignoring actual performance at this point).</td>
 </tr>
 </tbody>
@@ -492,7 +484,7 @@ Week 7 - Deliverable
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Hyperparameter tuning of SNN for RadioML</td>
 </tr>
 <tr class="even">
@@ -500,11 +492,11 @@ Week 7 - Deliverable
 <td style="text-align: left;">Explore different versions for hyperparameters focusing on learning rate, learning rate decay schedule, optimizers, momentum, batch size, etc. to optimize achieved accuracy of the network.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Classify RadioML data by modulation with at least, say, 60% accuracy on the test set (which corresponds to the worst performance reported in the previous work).</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Report on architecture, implementation and hyperparameters for the model and discuss resulting accuracy.</td>
 </tr>
 </tbody>
@@ -518,11 +510,11 @@ Week 8
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Adapt RadioML SNN for quantization in Brevitas.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a trained quantized version of RadioML SNN in Brevitas (without focusing on accuracy at this point).</td>
 </tr>
 </tbody>
@@ -533,7 +525,7 @@ Week 8
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Tuning of architecture parameters for RadioML SNN</td>
 </tr>
 <tr class="even">
@@ -541,7 +533,7 @@ Week 8
 <td style="text-align: left;">Hyperparameter tuning can be a very time-consuming and tedious process. Therefore, we schedule this week to continue experimentation, focusing on modifications and optimizations of the model architecture.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have optimized RadioML SNN with highest achieved accuracy, update report with results.</td>
 </tr>
 </tbody>
@@ -555,7 +547,7 @@ Week 9 - Deliverable
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Optimize quantized version of RadioML SNN.</td>
 </tr>
 <tr class="even">
@@ -563,11 +555,11 @@ Week 9 - Deliverable
 <td style="text-align: left;">Experiment with the Brevitas model for RadioML to reduce model size while maintaining high accuracy.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have optimized quantized RadioML SNN with highest achieved accuracy.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Report on architecture, implementation and hyperparameters for quantized RadioML SNN.</td>
 </tr>
 </tbody>
@@ -581,11 +573,11 @@ Week 10 - Deliverable
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Final report and video</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Submit final report and video addressing project progress, challenges, solutions and results.</td>
 </tr>
 </tbody>
