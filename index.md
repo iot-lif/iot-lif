@@ -9,6 +9,8 @@ Software Defined Radios for the task of modulation classification.
 The project is carried out by Owen Jow and Simon Kaufmann at the University of California,
 San Diego during Spring Quarter 2020 for the course CSE 145/237D.
 
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/ZPpojEGsSfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Background
 
 Radio communication plays an important role in modern day life and
@@ -39,7 +41,3 @@ networks for the task. Due to less developed and sophisticated training methods
 available for SNNs, we do not anticipate to achieve better accuracy on the dataset,
 but we hope to lay groundwork for an efficient low-power implementation that
 will require fewer resources than conventional neural networks.
-
-## Results
-
-Results will be published here throughout the project.
