@@ -27,6 +27,8 @@ quantization accounts for a drop in accuracy of around 1.5%. These
 results represent a first step toward an efficient, event-driven
 solution for signal classification.
 
+This page is available as PDF [here](/assets/other/lif_final_report.pdf)
+
 Introduction
 ============
 
