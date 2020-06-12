@@ -321,12 +321,12 @@ Quantizing the state variables to 12-bit integers already causes the
 accuracy to be halved compared to the non-quantized model.
 
 <figure>
-<embed src="quantized_weight.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized weights.</figcaption>
+<embed src="/assets/img/quantized_weight.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized weights.</figcaption>
 </figure><span id="fig:quantized_weights_result"
 label="fig:quantized_weights_result">\[fig:quantized\_weights\_result\]</span>
 
 <figure>
-<embed src="quantized_state.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized state.</figcaption>
+<embed src="/assets/img/quantized_state.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized state.</figcaption>
 </figure><span id="fig:quantized_state_result"
 label="fig:quantized_state_result">\[fig:quantized\_state\_result\]</span>
 
@@ -527,7 +527,7 @@ Week 4
 -   Trained the default MNIST SNN on the cluster, peak accuracy: 99.02%
 
     <figure>
-    <embed src="mnist_original.pdf" style="width:50.0%" /><figcaption>Accuracy throughout training process for default MNIST model</figcaption>
+    <embed src="/assets/img/mnist_original.pdf" style="width:50.0%" /><figcaption>Accuracy throughout training process for default MNIST model</figcaption>
     </figure>
 
 <span class="sans-serif">**Owen**</span>:
@@ -686,12 +686,12 @@ The weight quantization for the MNIST model achieved the following
 results:
 
 <figure>
-<embed src="mnist_quantization.pdf" style="width:50.0%" /><figcaption>Accuracy for MNIST SNN with quantized weights</figcaption>
+<embed src="/assets/img/mnist_quantization.pdf" style="width:50.0%" /><figcaption>Accuracy for MNIST SNN with quantized weights</figcaption>
 </figure>A summary of the results achieved using runtime quantization is
 shown below:
 
-<embed src="eps0.pdf" title="fig:" style="width:40.0%" /> 
-<embed src="eps1.pdf" title="fig:" style="width:40.0%" />
+<embed src="/assets/img/eps0.pdf" title="fig:" style="width:40.0%" /> 
+<embed src="/assets/img/eps1.pdf" title="fig:" style="width:40.0%" />
 
 <span class="sans-serif">**Owen**</span>:
 
@@ -839,8 +839,8 @@ The network was trained and evaluated using different bit widths for
 weights and neuron state to optimize the performance and find a
 trade-off between accuracy and resource consumption of the network.
 
-<embed src="quantized_weight.pdf" title="fig:" /> 
-<embed src="quantized_state.pdf" title="fig:" />
+<embed src="/assets/img/quantized_weight.pdf" title="fig:" /> 
+<embed src="/assets/img/quantized_state.pdf" title="fig:" />
 
 For the proposed network we chose a weight quantization of 8-bit and a
 state quantization of 24-bit. This leads to a memory reduction for
