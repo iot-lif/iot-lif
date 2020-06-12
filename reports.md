@@ -74,7 +74,7 @@ Brevitas to work together with the DCLL library for creating SNNs.
 An overview of the used software parts is shown below:
 
 <figure>
-<img src="assets/img/brevitas-graphic.png" alt="Overview of software parts for the project." style="width:50.0%" /><figcaption>Overview of software parts for the project.</figcaption>
+<img src="/assets/img/brevitas-graphic.png" alt="Overview of software parts for the project." style="width:50.0%" /><figcaption>Overview of software parts for the project.</figcaption>
 </figure>The contributions of our work are as follows:
 
 -   We have made, to the best of our knowledge, the first attempt at
@@ -146,7 +146,7 @@ savings in memory, as we do not need to keep track of the entire
 computation graph for multiple time steps).
 
 <figure>
-<img src="assets/img/spiking-layers.png" alt="Simplified view of a convolutional DCLL spiking layer." style="width:80.0%" /><figcaption>Simplified view of a convolutional DCLL spiking layer.</figcaption>
+<img src="/assets/img/spiking-layers.png" alt="Simplified view of a convolutional DCLL spiking layer." style="width:80.0%" /><figcaption>Simplified view of a convolutional DCLL spiking layer.</figcaption>
 </figure><span id="fig:snn_neuron"
 label="fig:snn_neuron">\[fig:snn\_neuron\]</span>
 
@@ -172,7 +172,7 @@ point in the signal arriving one after another (as events) to the SNN,
 which would provide class predictions in real time.
 
 <figure>
-<img src="assets/img/radioml.png" alt="A visualization of image discretizations for I/Q samples." style="width:80.0%" /><figcaption>A visualization of image discretizations for I/Q samples.</figcaption>
+<img src="/assets/img/radioml.png" alt="A visualization of image discretizations for I/Q samples." style="width:80.0%" /><figcaption>A visualization of image discretizations for I/Q samples.</figcaption>
 </figure><span id="fig:radioml_iq_images"
 label="fig:radioml_iq_images">\[fig:radioml\_iq\_images\]</span>
 
@@ -245,7 +245,7 @@ probabilities. Each layer was, of course, a spiking DCLL layer wrapped
 around these base layer types.
 
 <figure>
-<img src="assets/img/network.png" alt="High-level overview of network architecture." style="width:80.0%" /><figcaption>High-level overview of network architecture.</figcaption>
+<img src="/assets/img/network.png" alt="High-level overview of network architecture." style="width:80.0%" /><figcaption>High-level overview of network architecture.</figcaption>
 </figure><span id="fig:network_arch"
 label="fig:network_arch">\[fig:network\_arch\]</span>
 
@@ -255,7 +255,7 @@ test set. For full 24-class classification, the peak per-SNR accuracy of
 our SNN model was 56%.
 
 <figure>
-<img src="assets/img/results_Jun12_06-28-21.png" alt="Per-layer classification accuracies at different SNRs." /><figcaption>Per-layer classification accuracies at different SNRs.</figcaption>
+<img src="/assets/img/results_Jun12_06-28-21.png" alt="Per-layer classification accuracies at different SNRs." /><figcaption>Per-layer classification accuracies at different SNRs.</figcaption>
 </figure><span id="fig:snr_results"
 label="fig:snr_results">\[fig:snr\_results\]</span>
 
@@ -345,7 +345,7 @@ followed by a fully-connected layer (non-spiking) which connects to the
 membrane potential of the neurons of the last layer.
 
 <figure>
-<img src="assets/img/quantization.png" alt="Architecture of quantized layer." style="width:80.0%" /><figcaption>Architecture of quantized layer.</figcaption>
+<img src="/assets/img/quantization.png" alt="Architecture of quantized layer." style="width:80.0%" /><figcaption>Architecture of quantized layer.</figcaption>
 </figure>Conclusion
 ==========
 
@@ -712,9 +712,9 @@ shown below:
 </tbody>
 </table>
 
-<img src="assets/img/rml_snn_acc3.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
-<img src="assets/img/rml_snn_acc2.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
-<img src="assets/img/rml_snn_acc1.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." />
+<img src="/assets/img/rml_snn_acc3.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
+<img src="/assets/img/rml_snn_acc2.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
+<img src="/assets/img/rml_snn_acc1.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." />
 
 Week 7 - Deliverable
 ====================
