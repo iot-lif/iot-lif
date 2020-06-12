@@ -147,8 +147,7 @@ computation graph for multiple time steps).
 
 <figure>
 <img src="/assets/img/spiking-layers.png" alt="Simplified view of a convolutional DCLL spiking layer." style="width:80.0%" /><figcaption>Simplified view of a convolutional DCLL spiking layer.</figcaption>
-</figure><span id="fig:snn_neuron"
-label="fig:snn_neuron">\[fig:snn\_neuron\]</span>
+</figure>
 
 RadioML
 -------
@@ -173,8 +172,7 @@ which would provide class predictions in real time.
 
 <figure>
 <img src="/assets/img/radioml.png" alt="A visualization of image discretizations for I/Q samples." style="width:80.0%" /><figcaption>A visualization of image discretizations for I/Q samples.</figcaption>
-</figure><span id="fig:radioml_iq_images"
-label="fig:radioml_iq_images">\[fig:radioml\_iq\_images\]</span>
+</figure>
 
 Brevitas
 --------
@@ -246,8 +244,7 @@ around these base layer types.
 
 <figure>
 <img src="/assets/img/network.png" alt="High-level overview of network architecture." style="width:80.0%" /><figcaption>High-level overview of network architecture.</figcaption>
-</figure><span id="fig:network_arch"
-label="fig:network_arch">\[fig:network\_arch\]</span>
+</figure>
 
 Although we spent a lot of time tuning hyperparameters for the SNN, we
 found it difficult to move past mid-50% classification accuracies on the
@@ -256,8 +253,7 @@ our SNN model was 56%.
 
 <figure>
 <img src="/assets/img/results_Jun12_06-28-21.png" alt="Per-layer classification accuracies at different SNRs." /><figcaption>Per-layer classification accuracies at different SNRs.</figcaption>
-</figure><span id="fig:snr_results"
-label="fig:snr_results">\[fig:snr\_results\]</span>
+</figure>
 
 Adapting DCLL for Brevitas
 --------------------------
@@ -322,13 +318,11 @@ accuracy to be halved compared to the non-quantized model.
 
 <figure>
 <embed src="/assets/img/quantized_weight.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized weights.</figcaption>
-</figure><span id="fig:quantized_weights_result"
-label="fig:quantized_weights_result">\[fig:quantized\_weights\_result\]</span>
+</figure>
 
 <figure>
 <embed src="/assets/img/quantized_state.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized state.</figcaption>
-</figure><span id="fig:quantized_state_result"
-label="fig:quantized_state_result">\[fig:quantized\_state\_result\]</span>
+</figure>
 
 Proposed Quantized Architecture and Results
 -------------------------------------------
@@ -346,7 +340,9 @@ membrane potential of the neurons of the last layer.
 
 <figure>
 <img src="/assets/img/quantization.png" alt="Architecture of quantized layer." style="width:80.0%" /><figcaption>Architecture of quantized layer.</figcaption>
-</figure>Conclusion
+</figure>
+
+Conclusion
 ==========
 
 In this project, we conducted, to our knowledge, the first foray into
@@ -690,8 +686,8 @@ results:
 </figure>A summary of the results achieved using runtime quantization is
 shown below:
 
-<embed src="/assets/img/eps0.pdf" title="fig:" style="width:40.0%" /> 
-<embed src="/assets/img/eps1.pdf" title="fig:" style="width:40.0%" />
+<embed src="/assets/img/eps0.pdf" style="width:40.0%" /> 
+<embed src="/assets/img/eps1.pdf" style="width:40.0%" />
 
 <span class="sans-serif">**Owen**</span>:
 
@@ -712,9 +708,9 @@ shown below:
 </tbody>
 </table>
 
-<img src="/assets/img/rml_snn_acc3.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
-<img src="/assets/img/rml_snn_acc2.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
-<img src="/assets/img/rml_snn_acc1.png" title="fig:" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." />
+<img src="/assets/img/rml_snn_acc3.png" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
+<img src="/assets/img/rml_snn_acc2.png" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." /> 
+<img src="/assets/img/rml_snn_acc1.png" alt="An example of the training process on RadioML for each of three convolutional DECOLLE SNN layers. The plots depict mean validation accuracy over time." />
 
 Week 7 - Deliverable
 ====================
@@ -839,8 +835,8 @@ The network was trained and evaluated using different bit widths for
 weights and neuron state to optimize the performance and find a
 trade-off between accuracy and resource consumption of the network.
 
-<embed src="/assets/img/quantized_weight.pdf" title="fig:" /> 
-<embed src="/assets/img/quantized_state.pdf" title="fig:" />
+<embed src="/assets/img/quantized_weight.pdf" /> 
+<embed src="/assets/img/quantized_state.pdf" />
 
 For the proposed network we chose a weight quantization of 8-bit and a
 state quantization of 24-bit. This leads to a memory reduction for
