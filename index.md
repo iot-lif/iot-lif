@@ -9,7 +9,7 @@ Software Defined Radios for the task of modulation classification.
 The project is carried out by Owen Jow and Simon Kaufmann at the University of California,
 San Diego during Spring Quarter 2020 for the course CSE 145/237D.
 
-<iframe width="90%" src="https://www.youtube.com/embed/ZPpojEGsSfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="90%" height="400px" src="https://www.youtube.com/embed/ZPpojEGsSfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Background
 
