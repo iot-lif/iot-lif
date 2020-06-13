@@ -111,7 +111,7 @@ computation should remain local to each neuron, meaning we cannot simply
 backpropagate through time (backpropagation through time tends to be
 prohibitively expensive with regard to memory anyway).
 
-Fortunately, one recent paper () provides a convenient way to implement
+Fortunately, one recent paper provides a convenient way to implement
 and train spiking neural networks using local layer-wise gradients which
 are only backpropagated within the same layer and time step. Their
 method is called “deep continous local learning," or DCLL for short. In
@@ -319,11 +319,11 @@ Quantizing the state variables to 12-bit integers already causes the
 accuracy to be halved compared to the non-quantized model.
 
 <figure>
-<embed src="/assets/img/quantized_weight.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized weights.</figcaption>
+<img src="/assets/img/quantized_weight.png" style="width:50.0%" /><figcaption>Model accuracy for quantized weights.</figcaption>
 </figure>
 
 <figure>
-<embed src="/assets/img/quantized_state.pdf" style="width:50.0%" /><figcaption>Model accuracy for quantized state.</figcaption>
+<img src="/assets/img/quantized_state.png" style="width:50.0%" /><figcaption>Model accuracy for quantized state.</figcaption>
 </figure>
 
 Proposed Quantized Architecture and Results
@@ -525,7 +525,7 @@ Week 4
 -   Trained the default MNIST SNN on the cluster, peak accuracy: 99.02%
 
     <figure>
-    <embed src="/assets/img/mnist_original.pdf" style="width:50.0%" /><figcaption>Accuracy throughout training process for default MNIST model</figcaption>
+    <img src="/assets/img/mnist_original.png" style="width:50.0%" /><figcaption>Accuracy throughout training process for default MNIST model</figcaption>
     </figure>
 
 <span class="sans-serif">**Owen**</span>:
@@ -684,12 +684,12 @@ The weight quantization for the MNIST model achieved the following
 results:
 
 <figure>
-<embed src="/assets/img/mnist_quantization.pdf" style="width:50.0%" /><figcaption>Accuracy for MNIST SNN with quantized weights</figcaption>
+<img src="/assets/img/mnist_quantization.png" style="width:50.0%" /><figcaption>Accuracy for MNIST SNN with quantized weights</figcaption>
 </figure>A summary of the results achieved using runtime quantization is
 shown below:
 
-<embed src="/assets/img/eps0.pdf" style="width:40.0%" /> 
-<embed src="/assets/img/eps1.pdf" style="width:40.0%" />
+<img src="/assets/img/eps0.png" style="width:40.0%" /> 
+<img src="/assets/img/eps1.png" style="width:40.0%" />
 
 <span class="sans-serif">**Owen**</span>:
 
@@ -837,8 +837,8 @@ The network was trained and evaluated using different bit widths for
 weights and neuron state to optimize the performance and find a
 trade-off between accuracy and resource consumption of the network.
 
-<embed src="/assets/img/quantized_weight.pdf" /> 
-<embed src="/assets/img/quantized_state.pdf" />
+<img src="/assets/img/quantized_weight.png" /> 
+<img src="/assets/img/quantized_state.png" />
 
 For the proposed network we chose a weight quantization of 8-bit and a
 state quantization of 24-bit. This leads to a memory reduction for
