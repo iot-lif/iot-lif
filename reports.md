@@ -137,7 +137,7 @@ $$\\begin{aligned}
 where *l* denotes the layer, *t* denotes the time step,
 *S*<sup>*l*</sup> is the output spike image for layer *l*, and
 *P*, *Q*, *R*, *U* are synaptic, refractory, and membrane-related state
-variables. *Δ**t* denotes the length of the time step. Note that the
+variables. *Δt* denotes the length of the time step. Note that the
 values of *P*<sup>*l*</sup>, *Q*<sup>*l*</sup>, *R*<sup>*l*</sup>, and
 *S*<sup>*l*</sup> are each passed to the next time step in the same
 layer, so these variables encapsulate the “state" of a neuron in a
