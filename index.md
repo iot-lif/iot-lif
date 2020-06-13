@@ -1,5 +1,9 @@
 ---
 layout: home 
+title: SNN for Modulation Classification
+tagline: SNN for Modulation Classifiction
+#permalink: /about.html
+order: 0
 ---
 
 ## Introduction

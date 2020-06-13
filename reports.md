@@ -569,7 +569,7 @@ Week 5
 </tbody>
 </table>
 
-Completion:<br>
+Completion:<br><br>
 Refer to the description in section **Brevitas**
 
 Important parts of the Brevitas code for this project are located in the
@@ -675,7 +675,7 @@ shown below:
 <table>
 <tbody>
 <tr class="odd">
-<tAd style="text-align: left;">Description:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Adapt SNN for RadioML using DCLL PyTorch library.</td>
 </tr>
 <tr class="even">
