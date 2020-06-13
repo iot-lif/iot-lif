@@ -525,20 +525,16 @@ Completion:<br>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Preprocess and load RadioML dataset for SNN.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criterai:</td>
 <td style="text-align: left;">Have the RadioML data on the GPU cluster in a form that can be fed to the SNN.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">:</td>
-<td style="text-align: left;"></td>
-</tr>
 </tbody>
 </table>
 
+Completion:<br><br>
 See the code on GitHub (along with the file histories) which will show
 that a version of RadioML loading and preprocessing was implemented in
 Week 4, and a better version is implemented now.
@@ -562,22 +558,17 @@ Week 5
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Get familiar with Brevitas library.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Written report including a description of which functionality Brevitas offers, how the codebase of Brevitas is organized, how it is used for regular neural networks and outline on where extensions for spiking neural networks will have to be made.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
 </tbody>
 </table>
 
-Refer to the description of Brevitas in section
-<a href="#sec:brevitas" data-reference-type="ref" data-reference="sec:brevitas">3.3</a>.
+Completion:<br>
+Refer to the description in section **Brevitas**
 
 Important parts of the Brevitas code for this project are located in the
 following directories:
@@ -607,20 +598,17 @@ DCLL convolutional layer will work in similar fashion using the
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Get familiar with the DCLL codebase, determine which parts of the code will need to be changed in order to create a VGG-like SNN architecture using DCLL modules.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Written report which includes a high-level overview of the different parts of the code and a description of which specific files and functions will need to be changed or utilized in order to define a VGG-like architecture for use with RadioML.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">:</td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 
+Completion:<br><br>
 Following is a written report, which could be expanded to a separate
 page upon request. After the refactor/cleanup, the code is split into
 four different folders: data, dcll, networks, and scripts. data includes
@@ -653,20 +641,16 @@ Week 6
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Extend Brevitas for usage with spiking neural networks from dcll library.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a trained quantized version of the MNIST network for different bit sizes (16-, 8- and 4-bit) and report on accuracy achieved.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">:</td>
-<td style="text-align: left;"></td>
-</tr>
 </tbody>
 </table>
 
+Completion<br><br>
 The changes made to combine DCLL library code with the Brevitas
 framework is described in section
 <a href="#sec:dcll_brevitas" data-reference-type="ref" data-reference="sec:dcll_brevitas">3.6</a>
@@ -688,15 +672,15 @@ shown below:
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<tAd style="text-align: left;">Description:</td>
 <td style="text-align: left;">Adapt SNN for RadioML using DCLL PyTorch library.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a first SNN modeled after VGG that can be trained on RadioML data (ignoring actual performance at this point).</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion:</td>
 <td style="text-align: left;">By checking the history of <a href="https://github.com/ohjay/snn-modulation-classification/blob/master/networks/radio_ml_conv.yaml">networks/radio_ml_conv.yaml</a> (the previous text is a link), you can see the specifications for the VGG-inspired networks that we set up. Furthermore, you can browse the different states of the codebase over the last few weeks, where we were able to train an SNN on RadioML data in almost all of them (pretty much every commit after week 4 should support SNN RadioML training – just run <span>scripts/train_radio_ml.sh</span> at any point in the history where the script exists).</td>
 </tr>
 </tbody>
@@ -714,15 +698,15 @@ Week 7 - Deliverable
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Hyperparameter tuning of SNN for RadioML</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Explore different versions for hyperparameters focusing on learning rate, learning rate decay schedule, optimizers, momentum, batch size, etc. to optimize achieved accuracy of the network.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Classify RadioML data by modulation with at least, say, 60% accuracy on the test set (which corresponds to the worst performance reported in the previous work).</td>
 </tr>
 <tr class="even">
@@ -744,20 +728,16 @@ Week 8
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Adapt RadioML SNN for quantization in Brevitas.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a trained quantized version of RadioML SNN in Brevitas (without focusing on accuracy at this point).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">:</td>
-<td style="text-align: left;"></td>
-</tr>
 </tbody>
 </table>
 
+Completion:<br><br>
 For this milestone, the SNN for RadioML from week 7 was adjusted to work
 with classes `QuantConvNetwork`, `QuantConv2dDCLLlayer`. Training of
 quantized weights worked without any further problems. For the state
@@ -771,7 +751,7 @@ class="sans-serif">**Owen**</span>:
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Tuning of architecture parameters for RadioML SNN</td>
 </tr>
 <tr class="even">
@@ -779,7 +759,7 @@ class="sans-serif">**Owen**</span>:
 <td style="text-align: left;">Hyperparameter tuning can be a very time-consuming and tedious process. Therefore, we schedule this week to continue experimentation, focusing on modifications and optimizations of the model architecture.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Have optimized RadioML SNN with highest achieved accuracy, update report with results.</td>
 </tr>
 <tr class="even">
@@ -803,7 +783,7 @@ Week 9 - Deliverable
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Optimize quantized version of RadioML SNN.</td>
 </tr>
 <tr class="even">
@@ -811,11 +791,11 @@ Week 9 - Deliverable
 <td style="text-align: left;">Experiment with the Brevitas model for RadioML to reduce model size while maintaining high accuracy.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have optimized quantized RadioML SNN with highest achieved accuracy.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Report on architecture, implementation and hyperparameters for quantized RadioML SNN.</td>
 </tr>
 <tr class="odd">
@@ -825,6 +805,7 @@ Week 9 - Deliverable
 </tbody>
 </table>
 
+Completion:<br><br>
 The network was trained and evaluated using different bit widths for
 weights and neuron state to optimize the performance and find a
 trade-off between accuracy and resource consumption of the network.
@@ -846,15 +827,15 @@ Week 10 - Deliverable
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Final report and video</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Submit final report and video addressing project progress, challenges, solutions and results.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion:</td>
 <td style="text-align: left;">Final report submitted and video introduction to the project uploaded to Youtube. Video and documentation can be found on the project webpage <a href="https://iot-lif.github.io/">https://iot-lif.github.io/</a>.</td>
 </tr>
 </tbody>
