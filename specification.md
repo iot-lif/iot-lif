@@ -4,7 +4,7 @@ title: Project Specification
 tagline: SNN for Modulation Classifiction
 #permalink: /about.html
 ref: specification 
-order: 0
+order: 3
 ---
 
 Overview

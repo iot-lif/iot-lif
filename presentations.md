@@ -4,7 +4,7 @@ title: Presentations
 tagline: SNN for Modulation Classifiction
 #permalink: /about.html
 ref: presentations
-order: 0
+order: 1
 ---
 
 Throughout the coures of the quarter we gave multiple presentations as update of our project progress. Our presentation slides can be viewed on this website.
