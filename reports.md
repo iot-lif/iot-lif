@@ -531,6 +531,7 @@ Completion:<br>
 <tr class="even">
 <td style="text-align: left;">Completion Criterai:</td>
 <td style="text-align: left;">Have the RadioML data on the GPU cluster in a form that can be fed to the SNN.</td>
+</tr>
 </tbody>
 </table>
 
@@ -564,6 +565,7 @@ Week 5
 <tr class="even">
 <td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Written report including a description of which functionality Brevitas offers, how the codebase of Brevitas is organized, how it is used for regular neural networks and outline on where extensions for spiking neural networks will have to be made.</td>
+</tr>
 </tbody>
 </table>
 
@@ -647,6 +649,7 @@ Week 6
 <tr class="even">
 <td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a trained quantized version of the MNIST network for different bit sizes (16-, 8- and 4-bit) and report on accuracy achieved.</td>
+</tr>
 </tbody>
 </table>
 
@@ -702,19 +705,19 @@ Week 7 - Deliverable
 <td style="text-align: left;">Hyperparameter tuning of SNN for RadioML</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Completion Criteria:</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Explore different versions for hyperparameters focusing on learning rate, learning rate decay schedule, optimizers, momentum, batch size, etc. to optimize achieved accuracy of the network.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Deliver:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Classify RadioML data by modulation with at least, say, 60% accuracy on the test set (which corresponds to the worst performance reported in the previous work).</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Report on architecture, implementation and hyperparameters for the model and discuss resulting accuracy.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Completion:</td>
 <td style="text-align: left;">For results of the optimization process, refer to “Tuning of SNN for RadioML network" section of the report.</td>
 </tr>
 </tbody>
@@ -734,6 +737,7 @@ Week 8
 <tr class="even">
 <td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have a trained quantized version of RadioML SNN in Brevitas (without focusing on accuracy at this point).</td>
+</tr>
 </tbody>
 </table>
 
@@ -762,13 +766,10 @@ class="sans-serif">**Owen**</span>:
 <td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Have optimized RadioML SNN with highest achieved accuracy, update report with results.</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">:</td>
-<td style="text-align: left;"></td>
-</tr>
 </tbody>
 </table>
 
+Completion:<br><br>
 We did continue to tune hyperparameters and re-train networks throughout
 these weeks (for more details, see “Tuning of SNN for RadioML network"
 in the Technical Material section of this report). However, despite our
@@ -797,10 +798,6 @@ Week 9 - Deliverable
 <tr class="even">
 <td style="text-align: left;">Deliver:</td>
 <td style="text-align: left;">Report on architecture, implementation and hyperparameters for quantized RadioML SNN.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">:</td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
