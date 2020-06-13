@@ -390,8 +390,6 @@ In this section we include the original schedule for the project
 including the proposed milestones and address progress made throughout
 the project and how the milestones were completed.
 
-Broadly, we were able to tackle every milestone,
-
 <table>
 <caption>Summary of milestone/deliverable schedule</caption>
 <thead>
@@ -749,8 +747,9 @@ quantization, the accuracy initially dropped significantly. This was due
 to the maximum state value being poorly calibrated for the new type of
 data. After determining the new maximum value and readjusting the
 quantized state variable, the drop in accuracy was comparable to the
-experiments run on MNIST data in week 6. <span
-class="sans-serif">**Owen**</span>:
+experiments run on MNIST data in week 6.
+
+<span class="sans-serif">**Owen**</span>:
 
 <table>
 <tbody>
