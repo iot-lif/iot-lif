@@ -392,8 +392,6 @@ the project and how the milestones were completed.
 
 Broadly, we were able to tackle every milestone,
 
-<span id="sec:schedule" label="sec:schedule">\[sec:schedule\]</span>
-
 <table>
 <caption>Summary of milestone/deliverable schedule</caption>
 <thead>
@@ -492,9 +490,6 @@ Broadly, we were able to tackle every milestone,
 </tbody>
 </table>
 
-<span id="milestone_summary"
-label="milestone_summary">\[milestone\_summary\]</span>
-
 Week 4
 ======
 
@@ -503,19 +498,16 @@ Week 4
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Description:</td>
 <td style="text-align: left;">Train SNN (DCLL lib) with MNIST dataset.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">:</td>
+<td style="text-align: left;">Completion Criteria:</td>
 <td style="text-align: left;">Have an SNN network that can be run on the MNIST dataset on the GPU cluster.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">:</td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
+Completion:<br>
 
 -   Configured job on GPU cluster to work with DCLL library
 
