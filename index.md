@@ -2,6 +2,8 @@
 layout: home 
 ---
 
+## Introduction
+
 The purpose of this project is to explore the usage of Spiking Neural Networks and
 an approach for training them (Deep Continuous Local Learning - DECOLLE) in
 Software Defined Radios for the task of modulation classification.
@@ -9,13 +11,9 @@ Software Defined Radios for the task of modulation classification.
 The project is carried out by Owen Jow and Simon Kaufmann at the University of California,
 San Diego during Spring Quarter 2020 for the course CSE 145/237D.  
 
-Project Video
-=============
-
 <iframe width="90%" height="400px" src="https://www.youtube.com/embed/ZPpojEGsSfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Abstract
-========
+## Abstract
 
 Due to the growing need for communication services to share a limited
 frequency spectrum, the ability to classify signals by modulation has
