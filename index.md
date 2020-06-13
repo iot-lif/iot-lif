@@ -7,9 +7,35 @@ an approach for training them (Deep Continuous Local Learning - DECOLLE) in
 Software Defined Radios for the task of modulation classification.
 
 The project is carried out by Owen Jow and Simon Kaufmann at the University of California,
-San Diego during Spring Quarter 2020 for the course CSE 145/237D.
+San Diego during Spring Quarter 2020 for the course CSE 145/237D.  
+
+Project Video
+=============
 
 <iframe width="90%" height="400px" src="https://www.youtube.com/embed/ZPpojEGsSfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Abstract
+========
+
+Due to the growing need for communication services to share a limited
+frequency spectrum, the ability to classify signals by modulation has
+risen in importance. At the same time, the desirability of small,
+low-cost communication devices means that efficiency of the solution is
+almost as important as efficacy. With this in mind, our method leverages
+spiking neural networks (an emerging event-based variant of traditional
+neural networks) to perform modulation classification more efficiently
+than previous approaches. We train a model using deep continuous local
+learning, quantize the parameters, and validate our approach on the
+RadioML dataset, a publicly available collection of I/Q radio signals.
+Using this method, we achieve a peak accuracy of 56% with 955K network
+parameters. We also propose a quantized model with 8-bit precision for
+static parameters and 24-bit precision for runtime parameters, where the
+quantization accounts for a drop in accuracy of around 1.5%. These
+results represent a first step toward an efficient, event-driven
+solution for signal classification.
+
+Find the full final report as PDF [here](/assets/other/lif_final_report.pdf)
+
 
 ## Background
 
